@@ -1,0 +1,55 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 80px;
+  min-height: 90vh;
+  background: url("../assets/tech.jpg") no-repeat center/cover;
+  position: relative;
+  color: #fff;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.hero-content {
+  align-items: center;
+  flex: 1;
+  max-width: 550px;
+  position: relative;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: #e5e5e5;
+  text-align: justify;
+}
+
+.hero-btn {
+  background: #636666;
+  color: #d0d2d6;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  background: #20233b;
+}
